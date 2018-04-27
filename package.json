@@ -1,0 +1,25 @@
+{
+    "name": "show-canary",
+    "version": "1.0.3",
+    "description":
+        "Nodejs script for deterministic hashing to a canary release, allowing for gradual traffic shaping. ",
+    "main": "./dist/index.js",
+    "scripts": {
+        "test": "jest --verbose --watch",
+        "build": "babel src --out-dir dist",
+        "prepublishOnly:": "npm run build"
+    },
+    "keywords": ["a/b testing", "canary release"],
+    "author": "abcloud.io",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-jest": "^22.4.3",
+        "jest": "^22.4.3"
+    },
+    "dependencies": {
+        "assign-uniform": "^1.0.4"
+    }
+}
