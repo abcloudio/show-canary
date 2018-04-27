@@ -1,9 +1,13 @@
 {
     "name": "show-canary",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description":
         "Nodejs script for deterministic hashing to a canary release, allowing for gradual traffic shaping. ",
     "main": "./dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abcloudio/show-canary.git"
+    },
     "scripts": {
         "test": "jest --verbose --watch",
         "build": "babel src --out-dir dist",
